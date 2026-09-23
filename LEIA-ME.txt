@@ -1,0 +1,28 @@
+SITE DA BARBEARIA — como personalizar
+=====================================
+
+1) DADOS DO NEGÓCIO (um único lugar)
+   Abra js/script.js e edite o objeto CONFIG no topo:
+   nome, whatsapp (só números, com DDI+DDD, ex.: 5541999999999), telefone, e-mail,
+   endereço, horários, redes sociais, links de avaliação do Google, nota/total
+   de avaliações e mapaEmbedUrl (URL do "Incorporar mapa" do Google Maps).
+   Quando o WhatsApp estiver preenchido, todos os botões "Agendar" / "Quero este plano"
+   e o botão flutuante passam a funcionar com mensagem pré-preenchida.
+   Quando tudo estiver real, defina modoDemonstracao: false para remover os avisos
+   de "conteúdo demonstrativo".
+
+2) IMAGENS (assets/images/)
+   Substitua os arquivos mantendo o mesmo nome (ou altere o src no HTML):
+   logo.png / logo-claro.png, hero.jpg, fachada.jpg, ambiente.jpg,
+   barbeiro-01..03.jpg, servicos/*.jpg, galeria/*.jpg.
+   Formato recomendado das fotos: 4:3 (ex.: 1200x900), JPG otimizado.
+
+3) TEXTOS, PREÇOS E PLANOS
+   Estão nos próprios arquivos .html. Procure os comentários "EDITAR".
+   Valores "R$ 00,00" e benefícios "a definir" são exemplos, não valores reais.
+
+4) PUBLICAÇÃO
+   Sem build e sem dependências: envie a pasta inteira para Netlify, Vercel,
+   HostGator ou qualquer hospedagem estática. A página inicial é index.html.
+
+Desenvolvido por DSB Company — https://dsb-company.netlify.app/

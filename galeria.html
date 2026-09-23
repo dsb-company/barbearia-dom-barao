@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: título e descrição próprios de cada página. EDITAR: troque "Nome da Barbearia" e a cidade. -->
+  <title>Galeria | Barbearia Dom Barão</title>
+  <meta name="description" content="Veja fotos da estrutura, da fachada, dos cortes, das barbas e da equipe da Barbearia Dom Barão.">
+  <meta name="theme-color" content="#ED8585">
+
+  <!-- Open Graph. EDITAR ao publicar: og:image e og:url precisam ser endereços absolutos (https://seudominio.com.br/...). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Barbearia Dom Barão">
+  <meta property="og:title" content="Galeria | Barbearia Dom Barão">
+  <meta property="og:description" content="Veja fotos da estrutura, da fachada, dos cortes, das barbas e da equipe da Barbearia Dom Barão.">
+  <meta property="og:image" content="assets/images/fachada.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- EDITAR (favicon): troque assets/icons/favicon.svg pelo ícone da barbearia (SVG ou PNG). -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-wa-msg="Olá! Vim pelo site, vi as fotos da galeria e gostaria de agendar um horário.">
+<!-- Ícones (sprite inline). Uso: <svg class="icon"><use href="#i-nome"/></svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5c0-.3.2-.5.5-.5H15z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <!-- EDITAR (logotipo): substitua assets/images/logo.png pelo logotipo real (PNG transparente, formato quadrado). -->
+        <img src="assets/images/logo.png" alt="" width="44" height="44">
+        <span data-cfg="nome">Nome da Barbearia</span>
+      </a>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm" href="contato.html" data-wa="Olá! Vim pelo site e gostaria de agendar um horário.">Agendar horário</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ========== CABEÇALHO DA PÁGINA ========== -->
+    <section class="page-hero" aria-labelledby="pagina-titulo">
+      <div class="container">
+        <h1 id="pagina-titulo">Galeria</h1>
+        <p class="lead">Um pouco do nosso espaço, do nosso time e do nosso trabalho. Toque em uma foto para ampliar.</p>
+      </div>
+    </section>
+    <div class="ribbon" aria-hidden="true"></div>
+
+    <div class="demo-strip demo-only">
+      <div class="container">
+        <p class="demo-note">As fotos desta galeria são imagens demonstrativas, criadas apenas para testar o layout. Substitua pelas fotos reais da barbearia.</p>
+      </div>
+    </div>
+
+    <!-- ========== GALERIA ========== -->
+    <section class="section section--cream" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <h2 id="galeria-titulo" class="sr-only">Fotos da barbearia</h2>
+
+        <div class="filters" role="group" aria-label="Filtrar fotos por categoria">
+          <button class="chip" type="button" data-filter="todas" aria-pressed="true">Todas</button>
+          <button class="chip" type="button" data-filter="estrutura" aria-pressed="false">Nossa estrutura</button>
+          <button class="chip" type="button" data-filter="fachada" aria-pressed="false">Fachada</button>
+          <button class="chip" type="button" data-filter="cortes" aria-pressed="false">Cortes</button>
+          <button class="chip" type="button" data-filter="barbas" aria-pressed="false">Barbas</button>
+          <button class="chip" type="button" data-filter="equipe" aria-pressed="false">Equipe</button>
+        </div>
+        <p class="gallery-status" data-gallery-status role="status" aria-live="polite"></p>
+
+        <!-- EDITAR (fotos): cada foto é um <button class="gallery__item">.
+             data-cat  = categoria (estrutura | fachada | cortes | barbas | equipe)
+             data-full = arquivo exibido no lightbox (pode ser uma versão maior da foto)
+             data-caption = legenda no lightbox
+             Formato recomendado: 4:3 (ex.: 1200×900 px). Para adicionar fotos, copie um bloco. -->
+        <div class="gallery" data-gallery data-stagger>
+
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="estrutura" data-full="assets/images/galeria/interior.jpg" data-caption="Nossa estrutura">
+            <span class="frame frame--4x3"><img src="assets/images/galeria/interior.jpg" width="1200" height="900" alt="Ambiente interno da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="fachada" data-full="assets/images/galeria/fachada.jpg" data-caption="Fachada">
+            <span class="frame frame--4x3"><img src="assets/images/galeria/fachada.jpg" width="1200" height="900" alt="Fachada da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="cortes" data-full="assets/images/servicos/corte-masculino.jpg" data-caption="Corte">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/corte-masculino.jpg" width="1200" height="900" alt="Corte realizado na barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="barbas" data-full="assets/images/servicos/barba.jpg" data-caption="Barba">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/barba.jpg" width="1200" height="900" alt="Barba feita na barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="equipe" data-full="assets/images/servicos/estrutura-04.jpg" data-caption="Equipe">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/estrutura-04.jpg" width="1200" height="900" alt="Equipe da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="estrutura" data-full="assets/images/servicos/estrutura-03.jpg" data-caption="Nossa estrutura">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/estrutura-03.jpg" width="1200" height="900" alt="Recepção da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="cortes" data-full="assets/images/servicos/corte-barba.jpg" data-caption="Corte">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/corte-barba.jpg" width="1200" height="900" alt="Corte masculino finalizado (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="fachada" data-full="assets/images/area-de-atendimento.jpg" data-caption="Fachada">
+            <span class="frame frame--4x3"><img src="assets/images/area-de-atendimento.jpg" width="1200" height="900" alt="Entrada da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="barbas" data-full="assets/images/servicos/barba.jpg" data-caption="Barba">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/barba.jpg" width="1200" height="900" alt="Barba modelada (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="cortes" data-full="assets/images/servicos/tratamento-capilar.jpg" data-caption="Corte">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/tratamento-capilar.jpg" width="1200" height="900" alt="Corte com acabamento (foto demonstrativa)" loading="lazy"></span>
+          </button>
+          <button class="gallery__item reveal reveal--up" type="button" data-cat="equipe" data-full="assets/images/servicos/acabamento.jpg" data-caption="Equipe">
+            <span class="frame frame--4x3"><img src="assets/images/servicos/acabamento.jpg" width="1200" height="900" alt="Profissionais da barbearia (foto demonstrativa)" loading="lazy"></span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CHAMADA FINAL ========== -->
+    <section class="section section--rose cta-final" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="reveal reveal--up">
+          <h2 id="cta-titulo">Seu próximo estilo começa aqui.</h2>
+          <p class="lead">Escolha um horário e fale direto com a barbearia pelo WhatsApp.</p>
+          <a class="btn btn--wa btn--lg" href="contato.html" data-wa="Olá! Vim pelo site e gostaria de agendar um horário.">
+            <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LIGHTBOX ========== -->
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <div class="lightbox__stage">
+        <button class="lightbox__btn lightbox__close" type="button" aria-label="Fechar" data-lb-close>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        </button>
+        <button class="lightbox__btn lightbox__prev" type="button" aria-label="Foto anterior">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-prev"/></svg>
+        </button>
+        <figure class="lightbox__figure">
+          <img class="lightbox__img" alt="">
+          <figcaption><span class="lightbox__caption"></span><span class="lightbox__count"></span></figcaption>
+        </figure>
+        <button class="lightbox__btn lightbox__next" type="button" aria-label="Próxima foto">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-next"/></svg>
+        </button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="ribbon" aria-hidden="true"></div>
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="index.html">
+            <img src="assets/images/logo-claro.png" alt="" width="44" height="44" loading="lazy">
+            <span data-cfg="nome">Nome da Barbearia</span>
+          </a>
+          <!-- EDITAR: frase curta do rodapé. -->
+          <p>Tradição, estilo e atenção a cada detalhe.</p>
+          <!-- EDITAR: links das redes sociais em js/script.js (CONFIG.redes). Redes sem link são ocultadas. -->
+          <ul class="socials">
+            <li><a data-social="instagram" href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
+            <li><a data-social="facebook" href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg></a></li>
+            <li><a data-social="youtube" href="#" aria-label="YouTube"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Navegação</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="avaliacoes.html">Avaliações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Endereço e contato</h2>
+          <!-- EDITAR: endereço e telefone em js/script.js (CONFIG.endereco, CONFIG.telefone). -->
+          <address>
+            <p data-cfg="endereco">Rua Exemplo, 000 – Bairro, Cidade – UF, 00000-000</p>
+            <p><a href="contato.html" data-cfg="telefone" data-cfg-href="tel">(00) 0000-0000</a></p>
+          </address>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Horário de funcionamento</h2>
+          <!-- EDITAR: horários em js/script.js (CONFIG.horarios). -->
+          <ul class="hours" data-hours>
+            <li><span>Segunda a sexta</span><span>00h às 00h</span></li>
+            <li><span>Sábado</span><span>00h às 00h</span></li>
+            <li><span>Domingo</span><span>Fechado</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> <span data-cfg="nome">Nome da Barbearia</span>. Todos os direitos reservados.</p>
+        <!-- Crédito configurável: nome e link em js/script.js (CONFIG.credito). -->
+        <p>Desenvolvido por <a data-credit href="https://dsb-company.netlify.app/" target="_blank" rel="noopener noreferrer">DSB Company</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp: número em js/script.js (CONFIG.whatsapp); mensagem em <body data-wa-msg="..."> -->
+  <a class="wa-float" href="contato.html" data-wa="" aria-label="Falar pelo WhatsApp">
+    <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__label">Agendar pelo WhatsApp</span>
+  </a>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
