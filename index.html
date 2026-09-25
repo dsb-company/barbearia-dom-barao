@@ -1,368 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- SEO: título e descrição próprios de cada página. EDITAR: troque "Nome da Barbearia" e a cidade. -->
-  <title>Barbearia Dom Barão</title>
-  <meta name="description" content="Mais que um corte, uma experiência. Corte, barba, tratamentos e planos de assinatura em um espaço pensado para quem valoriza qualidade e bom atendimento.">
-  <meta name="theme-color" content="#ED8585">
-
-  <!-- Open Graph. EDITAR ao publicar: og:image e og:url precisam ser endereços absolutos (https://seudominio.com.br/...). -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Barbearia Dom Barão">
-  <meta property="og:title" content="Barbearia Dom Barão">
-  <meta property="og:description" content="Mais que um corte, uma experiência. Corte, barba, tratamentos e planos de assinatura em um espaço pensado para quem valoriza qualidade e bom atendimento.">
-  <meta property="og:image" content="assets/images/fachada.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- EDITAR (favicon): troque assets/icons/favicon.svg pelo ícone da barbearia (SVG ou PNG). -->
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap">
-  <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda administrativa Art da Navalha"><meta name="theme-color" content="#101214">
+  <title>Art da Navalha | Agenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-wa-msg="Olá! Vim pelo site e gostaria de mais informações.">
-<!-- Ícones (sprite inline). Uso: <svg class="icon"><use href="#i-nome"/></svg> -->
-<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
-  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
-  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5c0-.3.2-.5.5-.5H15z"/></symbol>
-  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
-  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
-  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
-</svg>
+<body>
+  <section class="auth-screen" id="authScreen">
+    <div class="auth-panel">
+      <div class="auth-brand"><span class="brand-mark">AN</span><div><strong>Art da Navalha</strong><small>Agenda administrativa</small></div></div>
+      <div class="auth-copy"><p class="eyebrow">ACESSO RESTRITO</p><h1>Bem-vindo de volta.</h1><p>Entre para organizar os horários e acompanhar o dia da equipe.</p></div>
+      <form id="loginForm" class="login-form">
+        <label>E-mail<input id="loginEmail" type="email" autocomplete="email" placeholder="seu@email.com" required></label>
+        <label>Senha<span class="password-field"><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Sua senha" required minlength="6"><button type="button" id="togglePassword">Mostrar</button></span></label>
+        <p class="login-error hidden" id="loginError" role="alert"></p>
+        <button type="submit" class="primary login-submit" id="loginButton">Entrar no painel</button>
+      </form>
+      <p class="auth-security">Acesso protegido e dados isolados por usuário.</p>
+    </div>
+    <div class="auth-visual"><div class="auth-monogram">AN</div><div class="auth-quote"><span>GESTÃO SIMPLES</span><h2>A agenda da equipe em um só lugar.</h2><p>Clareza nos horários. Agilidade no atendimento.</p></div></div>
+  </section>
 
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="index.html">
-        <!-- EDITAR (logotipo): substitua assets/images/logo.png pelo logotipo real (PNG transparente, formato quadrado). -->
-        <img src="assets/images/logo.png" alt="" width="256" height="256">
-        <span data-cfg="nome">Barbearia Dom Barão</span>
-      </a>
-
-      <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
-        <ul class="site-nav__list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="planos.html">Planos</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="avaliacoes.html">Avaliações</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <a class="btn btn--primary btn--sm" href="contato.html" data-wa="Olá! Vim pelo site e gostaria de agendar um horário.">Agendar horário</a>
+  <div id="appShell" class="hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">AN</span><div><strong>Art da Navalha</strong><small id="shopName">Gestão de agenda</small></div></div>
+      <nav aria-label="Navegação principal">
+        <button class="nav-item active" data-view="agenda"><span class="nav-icon">▦</span><span>Agenda</span></button>
+        <button class="nav-item owner-only" data-view="equipe"><span class="nav-icon">♙</span><span>Colaboradores</span></button>
       </nav>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="conteudo">
-
-    <!-- ========== HERO ========== -->
-    <section class="hero" aria-labelledby="hero-titulo">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <h1 id="hero-titulo"><span>Mais que um corte.</span> <span>Uma experiência.</span></h1>
-          <p class="lead">Tradição, estilo e atenção a cada detalhe. Um espaço pensado para quem valoriza qualidade, personalidade e um atendimento de excelência.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="contato.html" data-wa="Olá! Vim pelo site e gostaria de agendar um horário.">Agendar horário</a>
-            <a class="btn btn--outline btn--lg" href="servicos.html">Conhecer serviços</a>
+      <div class="sidebar-bottom">
+        <div class="user-card"><span class="avatar" id="userAvatar">U</span><div><strong id="userName">Usuário</strong><small id="userRole">Conectado</small></div></div>
+        <button id="logoutBtn" class="logout-button"><span>↪</span> Sair da conta</button>
+      </div>
+    </aside>
+    <div class="mobile-shade hidden" id="mobileShade"></div>
+    <main>
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div class="page-heading"><p class="eyebrow">PAINEL DE ATENDIMENTO</p><h1 id="pageTitle">Agenda</h1><p id="pageSubtitle">Acompanhe e organize os horários da equipe.</p></div>
+        <div class="top-actions"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar cliente..." aria-label="Buscar cliente"></label><button class="primary" id="newAppointmentBtn"><span>＋</span><b>Novo agendamento</b></button></div>
+      </header>
+      <section class="content" id="agendaView">
+        <div class="stats" id="stats"></div>
+        <div class="calendar-card">
+          <div class="calendar-toolbar">
+            <div class="date-navigation"><button class="ghost" id="todayBtn">Hoje</button><button class="icon-btn" id="prevBtn" aria-label="Semana anterior">‹</button><button class="icon-btn" id="nextBtn" aria-label="Próxima semana">›</button><h2 id="weekLabel"></h2></div>
+            <div class="filters"><select id="barberFilter" aria-label="Filtrar por profissional"><option value="all">Todos os profissionais</option></select><select id="statusFilter" aria-label="Filtrar por status"><option value="all">Todos os status</option><option value="confirmed">Confirmado</option><option value="pending">Pendente</option><option value="completed">Concluído</option><option value="cancelled">Cancelado</option></select></div>
           </div>
+          <div class="loading-state" id="calendarLoading">Carregando agenda...</div><div class="calendar-scroll hidden" id="calendarScroll"><div class="calendar" id="calendar"></div></div>
+          <div class="legend"><span><i class="confirmed"></i>Confirmado</span><span><i class="pending"></i>Pendente</span><span><i class="completed"></i>Concluído</span><span><i class="cancelled"></i>Cancelado</span></div>
         </div>
+      </section>
+      <section class="content hidden" id="teamView">
+        <div class="section-toolbar"><div><h2>Colaboradores</h2><p>Gerencie quem pode acessar a agenda.</p></div><button class="primary" id="newCollaboratorBtn"><span>＋</span> Adicionar colaborador</button></div>
+        <div class="team-grid" id="teamGrid"><div class="loading-state">Carregando equipe...</div></div>
+      </section>
+    </main>
+  </div>
 
-        <div class="hero__media">
-          <div class="hero__frame">
-            <!-- EDITAR (foto principal): troque assets/images/hero.jpg por uma foto profissional da barbearia (formato vertical 4:5, ideal 1200×1500 px). -->
-            <img src="assets/images/interior.jpg" width="736" height="981" alt="Interior de uma barbearia (foto demonstrativa)" fetchpriority="high">
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="ribbon" aria-hidden="true"></div>
-
-    <!-- ========== NOSSA BARBEARIA (com foto da fachada) ========== -->
-    <section class="section section--cream" aria-labelledby="barbearia-titulo">
-      <div class="container split">
-        <!-- EDITAR (FACHADA): troque assets/images/fachada.jpg pela foto real da fachada (formato 4:3, ideal 1600×1200 px). -->
-        <figure class="frame frame--4x3 reveal reveal--left">
-          <img src="assets/images/fachada.jpg" width="235" height="356" alt="Fachada da barbearia (foto demonstrativa)" loading="lazy">
-        </figure>
-
-        <div class="reveal reveal--right">
-          <h2 id="barbearia-titulo">Nossa barbearia</h2>
-          <!-- EDITAR (texto institucional): descreva o ambiente e a experiência reais da barbearia. -->
-          <p class="lead">Um lugar para cuidar da aparência com calma, boa conversa e a atenção que cada cliente merece.</p>
-          <p>Do primeiro contato ao acabamento final, cada atendimento é pensado para que você saia com o estilo que combina com você. Ambiente acolhedor, profissionais dedicados e cuidado em cada detalhe.</p>
-          <a class="btn btn--primary" href="sobre.html">Conheça nossa história</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== NOSSOS SERVIÇOS ========== -->
-    <section class="section section--soft" aria-labelledby="servicos-titulo">
-      <div class="container">
-        <div class="section-head reveal reveal--up">
-          <div class="section-head__text">
-            <h2 id="servicos-titulo">Nossos serviços</h2>
-            <p class="lead">Do corte clássico ao cuidado completo com cabelo e barba.</p>
-          </div>
-          <a class="btn btn--primary" href="servicos.html">Ver todos os serviços</a>
-        </div>
-
-        <!-- EDITAR (serviços e preços): altere nome, descrição, foto (assets/images/servicos/) e valor de cada card. -->
-        <div class="services-grid" data-stagger>
-          <article class="service-card reveal reveal--up">
-            <div class="frame frame--4x3"><img src="assets/images/servicos/corte-masculino.jpg" width="736" height="1037" alt="Corte masculino (foto demonstrativa)" loading="lazy"></div>
-            <div class="service-card__body">
-              <h3>Corte masculino</h3>
-              <p>Corte na tesoura ou na máquina, com acabamento e finalização ao seu estilo.</p>
-              <p class="service-card__price"><span class="price">R$ 40,00</span></p><!-- EDITAR: preço -->
-            </div>
-          </article>
-
-          <article class="service-card reveal reveal--up">
-            <div class="frame frame--4x3"><img src="assets/images/servicos/barba.jpg" width="736" height="1298" alt="Barba (foto demonstrativa)" loading="lazy"></div>
-            <div class="service-card__body">
-              <h3>Barba</h3>
-              <p>Modelagem e cuidado da barba, do contorno à hidratação.</p>
-              <p class="service-card__price"><span class="price">R$ 30,00</span></p><!-- EDITAR: preço -->
-            </div>
-          </article>
-
-          <article class="service-card reveal reveal--up">
-            <div class="frame frame--4x3"><img src="assets/images/servicos/corte-barba.jpg" width="736" height="981" alt="Corte e barba (foto demonstrativa)" loading="lazy"></div>
-            <div class="service-card__body">
-              <h3>Corte + barba</h3>
-              <p>O combo completo: cabelo e barba alinhados em um só horário.</p>
-              <p class="service-card__price"><span class="price">R$ 65,00</span></p><!-- EDITAR: preço -->
-            </div>
-          </article>
-
-          <article class="service-card reveal reveal--up">
-            <div class="frame frame--4x3"><img src="assets/images/servicos/acabamento.jpg" width="736" height="920" alt="Acabamento (foto demonstrativa)" loading="lazy"></div>
-            <div class="service-card__body">
-              <h3>Acabamento</h3>
-              <p>Contornos e detalhes para manter o corte impecável entre uma visita e outra.</p>
-              <p class="service-card__price"><span class="price">R$ 20,00</span></p><!-- EDITAR: preço -->
-            </div>
-          </article>
-
-          <article class="service-card reveal reveal--up">
-            <div class="frame frame--4x3"><img src="assets/images/servicos/tratamento-capilar.jpg" width="736" height="1104" alt="Tratamento capilar (foto demonstrativa)" loading="lazy"></div>
-            <div class="service-card__body">
-              <h3>Tratamentos capilares</h3>
-              <p>Hidratação e cuidados para o couro cabeludo e para os fios.</p>
-              <p class="service-card__price"><span class="price">R$ 50,00</span></p><!-- EDITAR: preço -->
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PLANOS E ASSINATURAS (prévia) ========== -->
-    <section class="section section--wine" aria-labelledby="planos-titulo">
-      <div class="container">
-        <div class="section-head reveal reveal--up">
-          <div class="section-head__text">
-            <h2 id="planos-titulo">Planos e assinaturas</h2>
-            <p class="lead">Frequência combinada, horário reservado e mais praticidade na sua rotina.</p>
-          </div>
-          <a class="btn btn--light" href="planos.html">Ver todos os planos</a>
-        </div>
-
-        <!-- EDITAR (planos): nomes, descrições e valores abaixo são DEMONSTRATIVOS. Detalhes completos em planos.html. -->
-        <div class="plans" data-stagger>
-          <article class="plan reveal reveal--up">
-            <h3 class="plan__name">Plano Corte</h3>
-            <p class="plan__tagline">Para manter o corte sempre em dia.</p>
-            <p class="plan__price"><span class="price">R$ 69,90</span><span>/mês</span><span class="demo-tag">Exemplo</span></p>
-            <ul class="checklist">
-              <li>Corte masculino</li>
-              <li>Frequência a definir</li>
-            </ul>
-          </article>
-
-          <article class="plan plan--featured reveal reveal--up">
-            <h3 class="plan__name">Plano Completo</h3>
-            <p class="plan__tagline">Corte e barba com acompanhamento regular.</p>
-            <p class="plan__price"><span class="price">R$ 119,90</span><span>/mês</span><span class="demo-tag">Exemplo</span></p>
-            <ul class="checklist">
-              <li>Corte masculino</li>
-              <li>Barba</li>
-              <li>Frequência a definir</li>
-            </ul>
-          </article>
-
-          <article class="plan reveal reveal--up">
-            <h3 class="plan__name">Plano Barba</h3>
-            <p class="plan__tagline">Para quem cuida da barba com frequência.</p>
-            <p class="plan__price"><span class="price">R$ 59,90</span><span>/mês</span><span class="demo-tag">Exemplo</span></p>
-            <ul class="checklist">
-              <li>Barba</li>
-              <li>Frequência a definir</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== AVALIAÇÕES DOS CLIENTES ========== -->
-    <section class="section section--cream" aria-labelledby="avaliacoes-titulo">
-      <div class="container">
-        <div class="reviews-layout">
-          <div class="reveal reveal--left">
-            <h2 id="avaliacoes-titulo">O que dizem nossos clientes</h2>
-            <!-- EDITAR (nota e total): CONFIG.google.nota e CONFIG.google.totalAvaliacoes em js/script.js. Valores atuais são EXEMPLO. -->
-            <p class="rating-summary__number"><span data-cfg="google.nota">4,9</span><span class="rating-summary__max">/5</span></p>
-            <div class="stars" role="img" aria-label="Nota 4,9 de 5" data-stars style="--rating: 4.9"></div>
-            <p><span data-cfg="google.totalAvaliacoes">1,7mil</span> avaliações no Google <span class="demo-tag">Exemplo</span></p>
-            <!-- EDITAR (link): CONFIG.google.perfil em js/script.js. -->
-            <div class="actions">
-              <a class="btn btn--primary" data-google="perfil" href="avaliacoes.html">Ver avaliações no Google</a>
-            </div>
-          </div>
-
-          <!-- EDITAR (depoimentos): os textos abaixo são EXEMPLOS. Substitua por avaliações reais (com autorização do cliente). Não há integração automática com o Google. -->
-          <div class="reviews-list" data-stagger>
-            <article class="review reveal reveal--up">
-              <div class="stars" role="img" aria-label="5 estrelas"></div>
-              <blockquote><p>“Gostei muito do resultado. O corte ficou do jeito que pedi e o atendimento foi ótimo.”</p></blockquote>
-              <p class="review__author">Rafael · Depoimento ilustrativo <span class="demo-tag">Exemplo</span></p>
-            </article>
-            <article class="review reveal reveal--up">
-              <div class="stars" role="img" aria-label="5 estrelas"></div>
-              <blockquote><p>“Fiz corte e barba e gostei bastante do cuidado nos detalhes. Com certeza voltarei.”</p></blockquote>
-              <p class="review__author">Lucas · Depoimento ilustrativo <span class="demo-tag">Exemplo</span></p>
-            </article>
-            <article class="review reveal reveal--up">
-              <div class="stars" role="img" aria-label="5 estrelas"></div>
-              <blockquote><p>“Ambiente agradável, atendimento pontual e um ótimo acabamento. Recomendo!”</p></blockquote>
-              <p class="review__author">Marcos · Depoimento ilustrativo<span class="demo-tag">Exemplo</span></p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== GALERIA (prévia) ========== -->
-    <section class="section section--soft" aria-labelledby="galeria-titulo">
-      <div class="container">
-        <div class="section-head reveal reveal--up">
-          <div class="section-head__text">
-            <h2 id="galeria-titulo">Galeria</h2>
-            <p class="lead">Um pouco do nosso espaço, do nosso time e do nosso trabalho.</p>
-          </div>
-          <a class="btn btn--primary" href="galeria.html">Ver galeria completa</a>
-        </div>
-
-        <!-- EDITAR (fotos): substitua os arquivos em assets/images/galeria/ mantendo os nomes, ou altere os caminhos abaixo. -->
-        <div class="mosaic" data-stagger>
-          <div class="mosaic__feature reveal reveal--up"><figure class="frame"><img src="assets/images/galeria/fachada.jpg" width="235" height="356" alt="Fachada da barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-          <div class="reveal reveal--up"><figure class="frame"><img src="assets/images/servicos/estrutura-04.jpg" width="736" height="920" alt="Interior da barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-          <div class="reveal reveal--up"><figure class="frame"><img src="assets/images/servicos/corte-barba.jpg" width="736" height="981" alt="Corte realizado na barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-          <div class="reveal reveal--up"><figure class="frame"><img src="assets/images/servicos/barba.jpg" width="736" height="1298" alt="Barba feita na barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-          <div class="reveal reveal--up"><figure class="frame"><img src="assets/images/servicos/estrutura-03.jpg" width="736" height="920" alt="Ambiente interno da barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-          <div class="reveal reveal--up"><figure class="frame"><img src="assets/images/servicos/interior-02.jpg" width="736" height="1308" alt="Ambiente da barbearia (foto demonstrativa)" loading="lazy"></figure></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CHAMADA FINAL ========== -->
-    <section class="section section--rose cta-final" aria-labelledby="cta-titulo">
-      <div class="container">
-        <div class="reveal reveal--up">
-          <h2 id="cta-titulo">Seu próximo estilo começa aqui.</h2>
-          <p class="lead">Escolha um horário e fale direto com a barbearia pelo WhatsApp.</p>
-          <a class="btn btn--wa btn--lg" href="contato.html" data-wa="Olá! Vim pelo site e gostaria de agendar um horário.">
-            <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
-            Chamar no WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="ribbon" aria-hidden="true"></div>
-    <div class="container">
-      <div class="site-footer__grid">
-        <div class="site-footer__brand">
-          <a class="brand" href="index.html">
-            <img src="assets/images/logo-claro.png" alt="" width="256" height="256" loading="lazy">
-            <span data-cfg="nome">Barbearia Dom Barão</span>
-          </a>
-          <!-- EDITAR: frase curta do rodapé. -->
-          <p>Tradição, estilo e atenção a cada detalhe.</p>
-          <!-- EDITAR: links das redes sociais em js/script.js (CONFIG.redes). Redes sem link são ocultadas. -->
-          <ul class="socials">
-            <li><a data-social="instagram" href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
-            <li><a data-social="facebook" href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg></a></li>
-            <li><a data-social="youtube" href="#" aria-label="YouTube"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg></a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="footer-title">Navegação</h2>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="planos.html">Planos</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="avaliacoes.html">Avaliações</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="footer-title">Endereço e contato</h2>
-          <!-- EDITAR: endereço e telefone em js/script.js (CONFIG.endereco, CONFIG.telefone). -->
-          <address>
-            <p data-cfg="endereco">Rua Exemplo, 000 – Bairro, Cidade – UF, 00000-000</p>
-            <p><a href="contato.html" data-cfg="telefone" data-cfg-href="tel">(00) 0000-0000</a></p>
-          </address>
-        </div>
-
-        <div>
-          <h2 class="footer-title">Horário de funcionamento</h2>
-          <!-- EDITAR: horários em js/script.js (CONFIG.horarios). -->
-          <ul class="hours" data-hours>
-            <li><span>Terça a sexta</span><span>08:30h às 19:30h</span></li>
-            <li><span>Sábado</span><span>08:30h às 16:00h</span></li>
-            <li><span>Domingo</span><span>Fechado</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="site-footer__bottom">
-        <p>© <span data-year>2026</span> <span data-cfg="nome">Barbearia Dom Barão</span>. Todos os direitos reservados.</p>
-        <!-- Crédito configurável: nome e link em js/script.js (CONFIG.credito). -->
-        <p>Desenvolvido por <a data-credit href="https://dsb-company.netlify.app/" target="_blank" rel="noopener noreferrer">DSB Company</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Botão flutuante de WhatsApp: número em js/script.js (CONFIG.whatsapp); mensagem em <body data-wa-msg="..."> -->
-  <a class="wa-float" href="contato.html" data-wa="" aria-label="Falar pelo WhatsApp">
-    <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
-    <span class="wa-float__label">Agendar pelo WhatsApp</span>
-  </a>
-
-  <script src="js/script.js" defer></script>
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer" id="appointmentDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">AGENDA</p><h2 id="drawerTitle">Novo agendamento</h2></div><button class="icon-btn close-drawer" aria-label="Fechar">×</button></div>
+    <form id="appointmentForm">
+      <input type="hidden" id="appointmentId"><input type="hidden" id="clientId">
+      <label>Cliente<input id="clientName" required placeholder="Nome completo" autocomplete="off"></label><label>Telefone<input id="clientPhone" required placeholder="(41) 99999-9999" inputmode="tel"></label>
+      <div class="form-row"><label>Data<input id="appointmentDate" type="date" required></label><label>Horário<input id="appointmentTime" type="time" min="08:00" max="20:00" step="1800" required></label></div>
+      <label>Profissional<select id="appointmentBarber" required></select></label>
+      <label>Status<select id="appointmentStatus"><option value="confirmed">Confirmado</option><option value="pending">Pendente</option><option value="completed">Concluído</option><option value="cancelled">Cancelado</option></select></label>
+      <label>Observações<textarea id="appointmentNotes" rows="3" maxlength="1000" placeholder="Preferências ou informações importantes"></textarea></label>
+      <div class="form-message hidden" id="appointmentMessage"></div>
+      <div class="form-actions"><button type="button" class="danger hidden" id="deleteBtn">Excluir</button><span></span><button type="button" class="ghost close-drawer">Cancelar</button><button type="submit" class="primary" id="saveAppointmentBtn">Salvar</button></div>
+    </form>
+  </aside>
+  <aside class="drawer" id="collaboratorDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">EQUIPE</p><h2>Adicionar colaborador</h2></div><button class="icon-btn close-drawer" aria-label="Fechar">×</button></div>
+    <div class="notice"><strong>Conta individual</strong><p>O colaborador terá um acesso próprio e visualizará somente a agenda.</p></div>
+    <form id="collaboratorForm"><label>Nome completo<input id="collaboratorName" required placeholder="Nome do barbeiro"></label><label>E-mail<input id="collaboratorEmail" type="email" required placeholder="barbeiro@email.com"></label><label>Senha temporária<input id="collaboratorPassword" type="password" required minlength="8" placeholder="Mínimo de 8 caracteres"></label><div class="form-message hidden" id="collaboratorMessage"></div><div class="form-actions"><span></span><button type="button" class="ghost close-drawer">Cancelar</button><button type="submit" class="primary" id="saveCollaboratorBtn">Criar acesso</button></div></form>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="auth.js"></script><script src="script.js"></script>
 </body>
 </html>
